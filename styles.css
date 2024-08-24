@@ -1,0 +1,132 @@
+:root {
+    --bg: #36034C;
+    --color: #662382;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+header,
+footer {
+    box-sizing: border-box;
+    padding: 8px;
+    width: 100%;
+    background-color: var(--bg);
+    text-align: center;
+    
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    transition: all 250ms;
+}
+
+main {
+    color: #262626;
+    font-size: 30px;
+    
+    flex-basis: 80%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    color: #fff;
+    transition: ease-out 100ms;
+}
+
+a:hover {
+    color: #aaa;
+    transition: ease-in 100ms;
+}
+
+
+button {
+    display: block;
+    width: 150px;
+    height: 75px;
+
+    color: #fff;
+    font-size: 18px;
+    
+    background-color: var(--color);
+    border: none;
+    border-radius: 50px 25px 25px 50px;
+    
+    transition: ease-out 200ms;
+}
+
+button:hover {
+    background-color: var(--bg);
+    border-radius: 50px 100px 100px 50px;
+    
+    transition: ease-in 200ms;
+}
+
+
+.level-text {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--color);
+    color: #fff;
+    font-size: 32px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: all 250ms;
+}
+
+.words-list,
+.words-buttons {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.words-buttons {
+    flex-direction: column;
+    gap: 8px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-align: right;
+    border-radius: 5px;
+    padding-right: 1px;
+    font-size: 28px;
+    font-weight: 300;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-top: 4px solid var(--bg);
+    width: 52px;
+    margin: 15px;
+}
